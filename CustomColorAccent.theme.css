@@ -1,5 +1,5 @@
-//META{"name":"Custom_Color_Accent","description":"Change Discords color accent to a custom color","author":"Zerthox","version":"1.0"}*//{}
-/* "Custom Color Accent v1.0" by @Zerthox */
+//META{"name":"Custom_Color_Accent","description":"Change Discords color accent to a custom color","author":"Zerthox","version":"1.1"}*//{}
+/* "Custom Color Accent v1.1" by @Zerthox */
 /*
 -------------------------------------------------------------------------------------------------------------------------------
 */
@@ -310,7 +310,8 @@
     transition: background-color .05s, color .05s
 }
 .highlight:hover,
-.theme-dark .message-group .comment .markup .highlight:hover {
+.theme-dark .message-group .comment .markup .highlight:hover,
+.theme-dark .chat .title-wrap .topic .highlight:hover {
     background-color: var(--main-color)
 }
 .mentioned .highlight:hover {
