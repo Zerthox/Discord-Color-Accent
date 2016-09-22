@@ -1,5 +1,5 @@
-//META{"name":"Custom_Color_Accent","description":"Change Discords color accent to a custom color","author":"Zerthox","version":"1.1"}*//{}
-/* "Custom Color Accent v1.1" by @Zerthox */
+//META{"name":"Custom_Color_Accent","description":"Change Discords color accent to a custom color","author":"Zerthox","version":"2.0"}*//{}
+/* "Custom Color Accent v2.0" by @Zerthox */
 /*
 -------------------------------------------------------------------------------------------------------------------------------
 */
@@ -26,6 +26,9 @@
 .spinner-chasing-dots .spinner-item {
     background-color: var(--main-color);
 }
+.note textarea::selection {
+    background: var(--main-color);
+}
 .scroller-wrap .scroller::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
 }
@@ -36,32 +39,7 @@
     color: var(--main-color);
 }
 .user-popout .header {
-    background: var(--main-color) url(/assets/8cd2f31a12333149b89ef3931626ab83.png);
-}
-.user-popout .body .notes textarea::selection {
-    background: var(--main-color);
-}
-.upload-drop-modal .bgScale {
-    background: var(--main-color)
-}
-.upload-modal {
-    background-color: var(--main-color);
-}
-.upload-modal .inner .file .icon.image {
-    border: 2px solid var(--main-color);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .4)
-}
-.channel-textarea.has-results .channel-textarea-inner {
-    border-color: var(--main-color)
-}
-.channel-textarea-autocomplete-inner {
-    border: 2px solid var(--main-color);
-}
-.channel-textarea-autocomplete-inner header {
-    background-color: var(--main-color);
-}
-.channel-textarea-autocomplete-inner ul.images li.active {
-    border-color: var(--main-color)
+    background: url(/assets/8cd2f31a12333149b89ef3931626ab83.png) var(--main-color);
 }
 .checkbox .checkbox-inner input[type=checkbox]:checked+span {
     background-color: var(--main-color);
@@ -74,20 +52,28 @@
     color: var(--main-color);
 }
 .download-apps .platforms .platform.active {
+    -webkit-transform: scale(1.025, 1.025);
+    -moz-transform: scale(1.025, 1.025);
+    -o-transform: scale(1.025, 1.025);
+    -ms-transform: scale(1.025, 1.025);
+    transform: scale(1.025, 1.025);
     border-color: var(--main-color)
 }
 .download-apps .platforms .platform.active .download-button {
     background-color: var(--main-color)
 }
 .invite-marketing .invite-marketing-header {
-    font-family: Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: var(--main-color);
 }
 .invite-marketing .invite-marketing-button {
     color: var(--main-color);
     border: 2px solid var(--main-color);
-    -webkit-transition: color .25s ease-out, border-color .25s ease-out;
-    transition: color .25s ease-out, border-color .25s ease-out;
+    -webkit-transition: color 250ms ease-out, border-color 250ms ease-out;
+    -moz-transition: color 250ms ease-out, border-color 250ms ease-out;
+    -o-transition: color 250ms ease-out, border-color 250ms ease-out;
+    -ms-transition: color 250ms ease-out, border-color 250ms ease-out;
+    transition: color 250ms ease-out, border-color 250ms ease-out;
 }
 .invite-mobile .top {
     background-color: var(--main-color);
@@ -100,6 +86,7 @@
 }
 #oauth2-authorize .authorize-inner header {
     background: var(--main-color);
+    -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .06);
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .06);
 }
 #oauth2-authorize .authorize-inner footer button.primary {
@@ -127,10 +114,10 @@
 .form header {
     color: var(--main-color);
 }
-.form .control-group input[type=email]:focus,
-.form .control-group input[type=number]:focus,
-.form .control-group input[type=password]:focus,
 .form .control-group input[type=text]:focus,
+.form .control-group input[type=email]:focus,
+.form .control-group input[type=password]:focus,
+.form .control-group input[type=number]:focus,
 .form .control-group textarea:focus {
     border-bottom: 2px solid var(--main-color);
 }
@@ -153,13 +140,14 @@
 }
 .region-select-flag.vip:after {
     background: var(--main-color);
-    font-family: Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 .region-select-modal .region-select-modal-header {
     color: var(--main-color);
 }
 .region-select-modal .region-select-modal-option:hover {
     border-color: var(--main-color);
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .06);
     box-shadow: 0 1px 0 rgba(0, 0, 0, .06)
 }
 .avatar-uploader .avatar-uploader-inner {
@@ -212,14 +200,35 @@
 .messages-popout-wrap .has-more button {
     color: var(--main-color);
 }
+.upload-drop-modal .bgScale {
+    background: var(--main-color)
+}
+.upload-modal {
+    background-color: var(--main-color);
+}
+.upload-modal .inner .file .icon.image {
+    border: 2px solid var(--main-color);
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, .4);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .4)
+}
+.channel-textarea.has-results .channel-textarea-inner {
+    border-color: var(--main-color)
+}
+.channel-textarea-autocomplete-inner {
+    border: 2px solid var(--main-color);
+}
+.channel-textarea-autocomplete-inner header {
+    background-color: var(--main-color);
+}
+.channel-textarea-autocomplete-inner ul.images li.active {
+    border-color: var(--main-color)
+}
 .progress .progress-bar {
     background-color: var(--main-color);
 }
-.chat .welcome-message h1 {
-    color: var(--main-color);
-}
 .radio-theme input[type=radio]:checked~label {
     border-color: var(--main-color);
+    -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .26);
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .26)
 }
 .now-playing {
@@ -242,10 +251,13 @@
 .modal-new-user .steps-wrap .steps li.active {
     background-color: var(--main-color);
     -webkit-transform: scale3d(1.666, 1.666, 1);
+    -moz-transform: scale3d(1.666, 1.666, 1);
+    -o-transform: scale3d(1.666, 1.666, 1);
+    -ms-transform: scale3d(1.666, 1.666, 1);
     transform: scale3d(1.666, 1.666, 1)
 }
 #user-profile-modal .header {
-    background: var(--main-color);
+    background-color: var(--main-color);
 }
 #user-profile-modal .btn {
     background-color: var(--main-color);
@@ -256,22 +268,26 @@
 .invite-modal .avatar-xxxlarge {
     background-color: var(--main-color);
 }
+.detected-platform-accounts-modal .btn-group .btn-primary {
+    background-color: var(--main-color);
+}
 .popout.popout-left header:before {
     border-left-color: var(--main-color);
 }
 .popout.popout-right header:before {
     border-right-color: var(--main-color);
 }
-.popout.popout-bottom-right header:before,
-.popout.popout-bottom header:before {
+.popout.popout-bottom header:before,
+.popout.popout-bottom-right header:before {
     border-bottom-color: var(--main-color);
 }
-.popout.popout-invert.popout-top-right header:before,
-.popout.popout-invert.popout-top header:before {
+.popout.popout-invert.popout-top header:before,
+.popout.popout-invert.popout-top-right header:before {
     border-top-color: var(--main-color);
 }
 .tooltip {
     background-color: var(--main-color);
+    -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .1);
     box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .1);
 }
 .tooltip.tooltip-top:after {
@@ -306,12 +322,13 @@
 }
 .highlight {
     color: var(--main-color);
-    -webkit-transition: background-color .05s, color .05s;
-    transition: background-color .05s, color .05s
+    -webkit-transition: background-color 50ms, color 50ms;
+    -moz-transition: background-color 50ms, color 50ms;
+    -o-transition: background-color 50ms, color 50ms;
+    -ms-transition: background-color 50ms, color 50ms;
+    transition: background-color 50ms, color 50ms
 }
-.highlight:hover,
-.theme-dark .message-group .comment .markup .highlight:hover,
-.theme-dark .chat .title-wrap .topic .highlight:hover {
+.highlight:hover {
     background-color: var(--main-color)
 }
 .mentioned .highlight:hover {
@@ -324,12 +341,24 @@
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
+#instant-invite-modal .clipboard-input-inner input {
+    color: var(--main-color);
+}
+#instant-invite-modal .copy {
+    background-color: var(--main-color);
+}
+.guild-header ul.treatment-1 li.invite a {
+    color: var(--main-color)
+}
 .guild-channels .channel-text.selected:before {
     border-left: 2px solid var(--main-color);
 }
 .guild-channels .channel-text:hover.channel-muted:before,
 .guild-channels .channel-text:hover:not(.unread):before {
     border-left: 2px solid var(--main-color);
+}
+.guild-channels .channel-text.unread:not(.selected):not(.channel-muted).selected:before {
+    background-color: var(--main-color)
 }
 .guild-channels .channel-voice-states li.speaking .avatar-small {
     background-color: var(--main-color);
@@ -351,6 +380,9 @@
 .channel-members .invite-btn {
     background-color: var(--main-color)
 }
+.chat .welcome-message h1 {
+    color: var(--main-color);
+}
 .private-channel-recipients-invite .footer button {
     background-color: var(--main-color);
 }
@@ -360,17 +392,44 @@
 .private-channel-recipients-invite .error-state.not-friends .btn {
     background: var(--main-color);
 }
-.add-friend-popout .btn:disabled {
+.add-friend-input-wrapper .btn:disabled {
     background-color: var(--main-color);
 }
 #friends .btn {
     background-color: var(--main-color);
 }
+#friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
+    background-color: var(--main-color);
+}
+#friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary .badge {
+    color: var(--main-color)
+}
 #friends .friends-table .friends-row .friends-column-guilds .avatar-small {
+    background-color: var(--main-color);
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.selected .badge {
+    background-color: var(--main-color);
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
+    background-color: var(--main-color);
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary .badge {
+    color: var(--main-color)
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary.selected {
+    color: var(--main-color)
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary.selected .badge {
     background-color: var(--main-color);
 }
 .channel-textarea-guard button {
     background-color: var(--main-color)
+}
+.notice.notice-brand {
+    background-color: var(--main-color)
+}
+.notice.notice-brand .btn:hover {
+    color: var(--main-color)
 }
 .radio-image .radio-inner span:after {
     border: 2px solid var(--main-color);
@@ -380,6 +439,7 @@
 }
 .overlay .guild-panel .guild-panel-header {
     background-color: var(--main-color);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
     box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
 }
 .overlay .guild-panel .btn-call {
@@ -388,13 +448,17 @@
 .overlay-user-popout .user-popout-options .btn {
     background-color: var(--main-color);
     -webkit-transition: border .2s, background-color .1s;
+    -moz-transition: border .2s, background-color .1s;
+    -o-transition: border .2s, background-color .1s;
+    -ms-transition: border .2s, background-color .1s;
     transition: border .2s, background-color .1s
 }
-.onboarding-slide input[type=email]:focus,
-.onboarding-slide input[type=number]:focus,
-.onboarding-slide input[type=password]:focus,
 .onboarding-slide input[type=text]:focus,
+.onboarding-slide input[type=email]:focus,
+.onboarding-slide input[type=password]:focus,
+.onboarding-slide input[type=number]:focus,
 .onboarding-slide textarea:focus {
+    -webkit-box-shadow: 0 2px 0 var(--main-color);
     box-shadow: 0 2px 0 var(--main-color)
 }
 .nuf-page .button.filled {
@@ -406,61 +470,67 @@
 .onboarding-navigation .step-status .step.current {
     background-color: var(--main-color)
 }
-.onboarding-slide input[type=email]:focus,
-.onboarding-slide input[type=number]:focus,
-.onboarding-slide input[type=password]:focus,
 .onboarding-slide input[type=text]:focus,
+.onboarding-slide input[type=email]:focus,
+.onboarding-slide input[type=password]:focus,
+.onboarding-slide input[type=number]:focus,
 .onboarding-slide textarea:focus {
+    -webkit-box-shadow: 0 2px 0 var(--main-color);
     box-shadow: 0 2px 0 var(--main-color)
 }
 .nuf-page .button.filled {
     background-color: var(--main-color);
 }
-.onboarding-slide input[type=email]:focus,
-.onboarding-slide input[type=number]:focus,
-.onboarding-slide input[type=password]:focus,
 .onboarding-slide input[type=text]:focus,
+.onboarding-slide input[type=email]:focus,
+.onboarding-slide input[type=password]:focus,
+.onboarding-slide input[type=number]:focus,
 .onboarding-slide textarea:focus {
+    -webkit-box-shadow: 0 2px 0 var(--main-color);
     box-shadow: 0 2px 0 var(--main-color)
 }
 .nuf-page .button.filled {
     background-color: var(--main-color);
 }
-.onboarding-slide input[type=email]:focus,
-.onboarding-slide input[type=number]:focus,
-.onboarding-slide input[type=password]:focus,
 .onboarding-slide input[type=text]:focus,
+.onboarding-slide input[type=email]:focus,
+.onboarding-slide input[type=password]:focus,
+.onboarding-slide input[type=number]:focus,
 .onboarding-slide textarea:focus {
+    -webkit-box-shadow: 0 2px 0 var(--main-color);
     box-shadow: 0 2px 0 var(--main-color)
 }
 .nuf-page .button.filled {
     background-color: var(--main-color);
 }
-.onboarding-slide input[type=email]:focus,
-.onboarding-slide input[type=number]:focus,
-.onboarding-slide input[type=password]:focus,
 .onboarding-slide input[type=text]:focus,
+.onboarding-slide input[type=email]:focus,
+.onboarding-slide input[type=password]:focus,
+.onboarding-slide input[type=number]:focus,
 .onboarding-slide textarea:focus {
+    -webkit-box-shadow: 0 2px 0 var(--main-color);
     box-shadow: 0 2px 0 var(--main-color)
 }
 .nuf-page .button.filled {
     background-color: var(--main-color);
 }
-.onboarding-slide input[type=email]:focus,
-.onboarding-slide input[type=number]:focus,
-.onboarding-slide input[type=password]:focus,
 .onboarding-slide input[type=text]:focus,
+.onboarding-slide input[type=email]:focus,
+.onboarding-slide input[type=password]:focus,
+.onboarding-slide input[type=number]:focus,
 .onboarding-slide textarea:focus {
+    -webkit-box-shadow: 0 2px 0 var(--main-color);
     box-shadow: 0 2px 0 var(--main-color)
 }
 .nuf-page .button.filled {
     background-color: var(--main-color);
 }
-.onboarding-slide input[type=email]:focus,
-.onboarding-slide input[type=number]:focus,
-.onboarding-slide input[type=password]:focus,
 .onboarding-slide input[type=text]:focus,
+.onboarding-slide input[type=email]:focus,
+.onboarding-slide input[type=password]:focus,
+.onboarding-slide input[type=number]:focus,
 .onboarding-slide textarea:focus {
+    -webkit-box-shadow: 0 2px 0 var(--main-color);
     box-shadow: 0 2px 0 var(--main-color)
 }
 .nuf-page .button.filled {
@@ -469,42 +539,38 @@
 .onboarding-slide.mic-test .content.waiting .button {
     color: var(--main-color);
 }
-.onboarding-slide input[type=email]:focus,
-.onboarding-slide input[type=number]:focus,
-.onboarding-slide input[type=password]:focus,
 .onboarding-slide input[type=text]:focus,
+.onboarding-slide input[type=email]:focus,
+.onboarding-slide input[type=password]:focus,
+.onboarding-slide input[type=number]:focus,
 .onboarding-slide textarea:focus {
+    -webkit-box-shadow: 0 2px 0 var(--main-color);
     box-shadow: 0 2px 0 var(--main-color)
 }
 .nuf-page .button.filled {
     background-color: var(--main-color);
 }
-.onboarding-slide input[type=email]:focus,
-.onboarding-slide input[type=number]:focus,
-.onboarding-slide input[type=password]:focus,
 .onboarding-slide input[type=text]:focus,
+.onboarding-slide input[type=email]:focus,
+.onboarding-slide input[type=password]:focus,
+.onboarding-slide input[type=number]:focus,
 .onboarding-slide textarea:focus {
+    -webkit-box-shadow: 0 2px 0 var(--main-color);
     box-shadow: 0 2px 0 var(--main-color)
 }
 .nuf-page .button.filled {
     background-color: var(--main-color);
 }
-.onboarding-slide input[type=email]:focus,
-.onboarding-slide input[type=number]:focus,
-.onboarding-slide input[type=password]:focus,
 .onboarding-slide input[type=text]:focus,
+.onboarding-slide input[type=email]:focus,
+.onboarding-slide input[type=password]:focus,
+.onboarding-slide input[type=number]:focus,
 .onboarding-slide textarea:focus {
+    -webkit-box-shadow: 0 2px 0 var(--main-color);
     box-shadow: 0 2px 0 var(--main-color)
 }
 .nuf-page .button.filled {
     background-color: var(--main-color);
-}
-.guilds-wrapper .guilds .guild .guild-inner {
-	background: #2e3136 !important;
-}
-.guilds-wrapper .guilds .guild.active:first-of-type .guild-inner,
-.guilds-wrapper .guilds .guild:first-of-type:hover .guild-inner {
-	background-color: var(--main-color) !important;
 }
 /*
 -------------------------------------------------------------------------------------------------------------------------------
@@ -512,9 +578,6 @@
 /* ===== HOVER COLOR ===== */
 .alert.form .form-inner .btn {
     border: 1px solid var(--hover-color)
-}
-.emoji-picker .categories .item.selected {
-    border-bottom-color: var(--hover-color)
 }
 .download-apps .platforms .platform.active p {
     color: var(--hover-color)
@@ -524,6 +587,8 @@
 }
 .slider-handle {
     border: 1px solid var(--hover-color);
+    -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .1);
 }
 .invite-marketing .invite-marketing-button:hover {
     color: var(--hover-color);
@@ -539,7 +604,7 @@
     color: var(--hover-color);
 }
 .form .btn-primary:hover {
-    background-color: var(--hover-color);
+    background-color: var(--hover-color)
 }
 .avatar-uploader a {
     color: var(--hover-color);
@@ -551,7 +616,11 @@
     color: var(--hover-color);
 }
 .need-help-modal .header input[type=text] {
+    -webkit-box-shadow: 0 2px 1px var(--hover-color);
     box-shadow: 0 2px 1px var(--hover-color);
+}
+.emoji-picker .categories .item.selected {
+    border-bottom-color: var(--hover-color)
 }
 .user-settings-modal .link-button {
     color: var(--hover-color);
@@ -565,6 +634,9 @@
 #user-profile-modal footer .btn:hover {
     background: var(--hover-color)
 }
+.detected-platform-accounts-modal .btn-group .btn-primary:hover:not(:disabled) {
+    background-color: var(--hover-color)
+}
 .button:hover {
     background-color: var(--hover-color)
 }
@@ -577,12 +649,24 @@
 #friends .btn:hover {
     background-color: var(--hover-color)
 }
+#friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
+    background-color: var(--hover-color)
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
+    background-color: var(--hover-color)
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) .badge {
+    color: var(--hover-color)
+}
 .channel-textarea-guard button:hover {
     background-color: var(--hover-color)
 }
 .overlay-user-popout .user-popout-options .btn {
     border: 1px solid var(--hover-color);
     -webkit-transition: border .2s, background-color .1s;
+    -moz-transition: border .2s, background-color .1s;
+    -o-transition: border .2s, background-color .1s;
+    -ms-transition: border .2s, background-color .1s;
     transition: border .2s, background-color .1s
 }
 .overlay-user-popout .user-popout-options .btn:hover {
@@ -593,28 +677,28 @@
 */
 /* ===== LIGHT COLOR ===== */
 .user-popout .avatar-wrapper .avatar-popout {
-	border: 4px solid var(--light-color);
-	background-color: var(--light-color);
+    border: 4px solid var(--light-color);
+    background-color: var(--light-color)
 }
 /*
 -------------------------------------------------------------------------------------------------------------------------------
 */
 /* ===== DARK COLOR ===== */
 .form .control-group label a:hover {
-	color: var(--dark-color);
+    color: var(--dark-color)
 }
 .avatar-uploader a:hover {
-	color: var(--dark-color);
+    color: var(--dark-color)
 }
 #permissions .permissions-helpdesk:hover {
-	color: var(--dark-color);
+    color: var(--dark-color)
 }
 .guild-settings-modal-members .guild-settings-modal-members-footer a:hover {
-	color: var(--dark-color);
+    color: var(--dark-color)
 }
 .user-settings-modal .link-button:hover {
-	color: var(--dark-color);
+    color: var(--dark-color)
 }
 .user-settings-modal a:hover {
-	color: var(--dark-color);
+    color: var(--dark-color)
 }
